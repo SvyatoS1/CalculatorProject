@@ -36,5 +36,10 @@ namespace CalculatorProj
                 throw new InvalidOperationException("Unknown operation");
             } 
         }
+        
+        protected Dictionary<string, Func<double, double, double>> GetOperation()
+        {
+            return _operations;
+        }
     }
 }
